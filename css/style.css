@@ -1,0 +1,18 @@
+.gs-container{
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.gs-carousel-item{
+   height: calc(100% / 4);
+}
+
+.gs-img-effect{
+    filter: opacity(60%);
+}
+
+.active{
+    filter: opacity(1);
+    border: 3px solid rgb(207, 43, 43);  
+}
