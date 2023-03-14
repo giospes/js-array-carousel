@@ -21,7 +21,7 @@ document.querySelectorAll('.gs-img-effect')[currentImg].classList.add('active');
 
 const btnN = document.querySelector(".next")
 const btnP = document.querySelector(".previous")
-let show = document.querySelector('.active').outerHTML
+let show =  `<img src="./img/${img[currentImg]}" alt="" class=" w-100 h-100 object-fit-cover">`
 slide.innerHTML = `${show}`
 
 btnN.addEventListener('click', goNext)
@@ -32,6 +32,8 @@ function goNext(){
     document.querySelectorAll('.gs-img-effect')[currentImg].classList.remove('active');
     currentImg++;
     document.querySelectorAll('.gs-img-effect')[currentImg].classList.add('active');
+    let show =  `<img src="./img/${img[currentImg]}" alt="" class=" w-100 h-100 object-fit-cover">`
+    slide.innerHTML = `${show}`
 }
 
 
