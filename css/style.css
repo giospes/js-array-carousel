@@ -5,11 +5,12 @@
 }
 
 .gs-carousel-item{
-   height: calc(100% / 4);
+   height: calc(100% / 5);
 }
 
 .gs-img-effect{
     filter: opacity(60%);
+    object-position: 50% 30% ;
 }
 
 .active{
